@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.main-content {
+  min-width: 0;
+}
+
+.sidebar .nav-link {
+  color: #adb5bd;
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-align: left;
+  border: 0;
+  background: transparent;
+}
+
+.sidebar .nav-link:hover:not(:disabled) {
+  color: white;
+  background: #343a40;
+}
+
+.sidebar .nav-link.active {
+  color: white;
+  background: #0d6efd;
+}
+
+.sidebar .nav-link:disabled {
+  opacity: 0.45;
+}
+
+.avatar-user {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: white;
+  font-weight: bold;
+}
+
+.stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-blue {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.icon-green {
+  background: #d1e7dd;
+  color: #198754;
+}
+
+.icon-orange {
+  background: #fff3cd;
+  color: #fd7e14;
+}
+
+.icon-purple {
+  background: #e2d9f3;
+  color: #6f42c1;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 75px;
+    padding: 12px !important;
+  }
+
+  .sidebar .brand-label,
+  .sidebar .nav-label,
+  .sidebar .sidebar-footer,
+  .sidebar > p {
+    display: none;
+  }
+
+  .sidebar .nav-link {
+    text-align: center;
+    padding: 12px 5px;
+  }
+
+  .sidebar .nav-link i {
+    margin: 0 !important;
+  }
+}
